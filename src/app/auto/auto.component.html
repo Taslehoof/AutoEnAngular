@@ -1,0 +1,12 @@
+
+<form [formGroup]="autoForm" name="autoForm">
+    <input type="text" formControlName="marca"><br>
+    <input type="text" formControlName="color"><br>
+    <input type="text" formControlName="modelo"><br>
+    <input type="text" formControlName="patente"><br>
+
+    <button (click)="cambiarVehiculo()">Auto-SetValue</button>
+    <button (click)="cambiarVehiculo2()">Auto-PatchValue</button>
+    <p></p>
+    Form Auto:{{autoForm.value | json}}
+</form>
